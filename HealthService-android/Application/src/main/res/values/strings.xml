@@ -28,7 +28,7 @@
     <string name="password">Password</string>
     <string name="fingerprint_description">Confirm fingerprint to continue</string>
     <string name="fingerprint_hint">Touch sensor</string>
-    <string name="password_description">Enter your store password to continue</string>
+    <string name="password_description">Enter your password to continue</string>
     <string name="purchase">Purchase</string>
     <string name="purchase_not_invalidated">Purchase not invalidated</string>
     <string name="purchase_button_not_invalidated_description">
@@ -47,4 +47,5 @@
     <string name="description_bugdroid_icon">Android bugdroid image</string>
     <string name="description_fingerprint_icon">Fingerprint icon</string>
     <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_activity_next_appointment">NextAppointmentActivity</string>
 </resources>
