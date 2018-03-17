@@ -1,6 +1,7 @@
 package com.example.android.fingerprintdialog;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -22,10 +23,8 @@ public class NextAppointmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next_appointment);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        Log.d(toolbar.toString(), toolbar.toString());
         setSupportActionBar(toolbar);
-      getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
 
