@@ -48,7 +48,11 @@
             android:name=".NextAppointmentActivity"
             android:label="@string/title_activity_next_appointment"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:parentActivityName=".DashboardActivity" />
+            android:parentActivityName=".DashboardActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".DashboardActivity" />
+        </activity>
     </application>
 
 </manifest>

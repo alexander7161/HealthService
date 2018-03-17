@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -20,28 +21,13 @@ public class DashboardActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        TextView nextAppointment = (TextView) findViewById(R.id.TextView);
+        nextAppointment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(DashboardActivity.this, NextAppointmentActivity.class);
+                startActivity(intent);
             }
-        });
-
-        //        TextView nextAppointment = (TextView) findViewById(R.id.);
-//        nextAppointment.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//      });
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        finish();
+      });
     }
 }
