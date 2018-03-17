@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!--
+<?xml version="1.0" encoding="utf-8"?><!--
  Copyright 2015 The Android Open Source Project
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,9 +13,9 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<manifest package="com.example.android.fingerprintdialog"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.fingerprintdialog"
     android:versionCode="1"
     android:versionName="1.0">
 
@@ -28,20 +28,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light"
         tools:ignore="GoogleAppIndexingWarning">
-
         <activity
             android:name=".MainActivity"
             android:label="@string/application_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".SettingsActivity"
             android:label="@string/action_settings"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
+
 </manifest>
