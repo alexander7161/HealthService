@@ -58,7 +58,7 @@
                                 </button>
                             </li>
                             <li>
-                                <h4 class="page-title">Informations</h4>
+                                <h4 class="page-title">Information</h4>
                             </li>
                         </ul>
 
@@ -135,7 +135,7 @@
                                       <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-view-list"></i> <span> Medical Report </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                  <li><a href="tables-basic.html">Informations</a></li>
+                                  <li><a href="tables-basic.html">Information</a></li>
                                     <li><a href="tables-datatable.html">Medical Report</a></li>
                                 </ul>
                             </li>
@@ -185,58 +185,165 @@
                 <!-- Start content -->
                 <div class="content">
                     <div class="container">
+              <div class="col-lg-6">
+                <div class="card-box">
+                  	<h4 class="header-title m-t-0 m-b-30">Lifestyle Survey</h4>
 
-                        <div class="row">
-							<div class="col-lg-6">
-								<div class="card-box">
+                  <form class="form-horizontal group-border-dashed" action="#">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Gender</label>
+                        <div class="col-sm-6">
+                            <div class="checkbox checkbox-pink">
+                                <input id="checkbox1" type="checkbox"
+                                       data-parsley-multiple="groups"
+                                       data-parsley-mincheck="2">
+                                <label for="checkbox1"> Women </label>
+                            </div>
+                            <div class="checkbox checkbox-pink">
+                                <input id="checkbox2" type="checkbox"
+                                       data-parsley-multiple="groups"
+                                       data-parsley-mincheck="2">
+                                <label for="checkbox2"> Man </label>
+                            </div>
+                            <div class="checkbox checkbox-pink">
+                                <input id="checkbox3" type="checkbox"
+                                       data-parsley-multiple="groups"
+                                       data-parsley-mincheck="2" required>
+                                <label for="checkbox3"> Other </label>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="form-group">
+                          <label class="col-sm-3 control-label">Age</label>
+                          <div class="col-sm-6">
+                              <input type="text" class="form-control" required
+                                     data-parsley-minlength="1" placeholder=""/>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-sm-3 control-label">Ethicity</label>
+                          <div class="col-sm-6">
+                              <input type="text" class="form-control" required
+                                     data-parsley-maxlength="2" placeholder=""/>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-sm-3 control-label">Length (cm)</label>
+                          <div class="col-sm-6">
+                              <input type="text" class="form-control" required
+                                     data-parsley-length="[1,250]"
+                                     placeholder=""/>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-sm-3 control-label">Weight (kg)</label>
+                          <div class="col-sm-6">
+                              <input type="text" class="form-control" required
+                                     data-parsley-min="1" placeholder=""/>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-sm-3 control-label">BMI</label>
+                          <div class="col-sm-6">
+                              <input type="text" class="form-control" required
+                                     data-parsley-max="2" placeholder=""/>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-sm-3 control-label">Do you smoke?</label>
+                          <div class="col-sm-6">
+                              <div class="checkbox checkbox-pink">
+                                  <input id="checkbox4" type="checkbox"
+                                         data-parsley-multiple="group1">
+                                  <label for="checkbox4">Yes </label>
+                              </div>
+                              <div class="checkbox checkbox-pink">
+                                  <input id="checkbox5" type="checkbox"
+                                         data-parsley-multiple="group1">
+                                  <label for="checkbox5">No </label>
+                              </div>
 
-                        			<h4 class="header-title m-t-0 m-b-30">Your Information</h4>
+
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-sm-3 control-label">How many cigarettes?</label>
+                          <div class="col-sm-6">
+                              <div class="checkbox checkbox-pink">
+                                  <input id="checkbox4" type="checkbox"
+                                         data-parsley-multiple="group1">
+                                  <label for="checkbox4">0 - 15</label>
+                              </div>
+                              <div class="checkbox checkbox-pink">
+                                  <input id="checkbox5" type="checkbox"
+                                         data-parsley-multiple="group1">
+                                  <label for="checkbox5">15 -20</label>
+                                </div>
+                                  <div class="checkbox checkbox-pink">
+                                      <input id="checkbox5" type="checkbox"
+                                             data-parsley-multiple="group1">
+                                      <label for="checkbox5">more them 20</label>
+                                  </div>
+                              </div>
+                              <div class="col-sm-offset-3 col-sm-9 m-t-15">
+                                <a href="#" data-toggle="modal" data-target="#add-category" class="btn btn-lg btn-success btn-block waves-effect waves-light">
+                                    <i class="fa fa-plus"></i> Submit
+                                </a>
+                              </div>
+                          </div>
+                      <div class="form-group m-b-0">
+
+                      </div>
+                  </form>
+                </div>
+              </div><!-- end col -->
+              <div class="row">
+    <div class="col-lg-6">
+      <div class="card-box">
+
+                    <h4 class="header-title m-t-0 m-b-30">Your Information</h4>
 
 
-                                    <table class="table m-0">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">First Name</th>
-                                                <td>Isabel</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Last Name</th>
-                                                <td>Illiano</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Birthday</th>
-                                                <td>23/06/1996</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">E-mail</th>
-                                                <td>Isabel.illiano@gmail.com</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Mobile</th>
-                                                <td>+06 14792469</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Address</th>
-                                                <td>Johannes van der Waalsweg 26,<br> 5612 JC Eindhoven</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Country</th>
-                                                <td>Netherlands</td>
-                                            </tr>
+                          <table class="table m-0">
+                              <thead>
+                                  <tr>
+                                      <th></th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <th scope="row">First Name</th>
+                                      <td>Isabel</td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">Last Name</th>
+                                      <td>Illiano</td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">Birthday</th>
+                                      <td>23/06/1996</td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">E-mail</th>
+                                      <td>Isabel.illiano@gmail.com</td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">Mobile</th>
+                                      <td>+06 14792469</td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">Address</th>
+                                      <td>Johannes van der Waalsweg 26,<br> 5612 JC Eindhoven</td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">Country</th>
+                                      <td>Netherlands</td>
+                                  </tr>
 
-                                        </tbody>
-                                    </table>
-								</div>
-							</div><!-- end col -->
-
-
-
-						</div>
+                              </tbody>
+                          </table>
+      </div>
+    </div><!-- end col -->
                         <!-- End row -->
 
 
@@ -261,7 +368,7 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th scope="row">General Practicer</th>
+                                                    <th scope="row">General Practitioner</th>
                                                     <td>Dr. Braun</td>
                                                     <td>Health Centre Kenlle, Eindhoven</td>
                                                 </tr>
@@ -284,7 +391,41 @@
 						</div>
                         <!-- end row -->
 
+                        <!-- Modal Add Category -->
+                        <div class="modal fade none-border" id="add-category">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title"><strong>Personal risk and Advice  </strong></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form role="form">
+                                            <div class="row">
+                                                <p><b>Risks</b></p>
+                                                <p>◉  20 times higher risk at developing heart and vessel diseases </p>
+                                                <p>◉  50% more chance of developing lung diseases</p><br><br>
+                                                <p><b>Advice</b></p>
+                                                <p>◉ Reduce the cigarettes dayly with one at the time</p>
+                                                <p>◉ Need help</p>
 
+                                                  <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  • Make an appointment with your general practicer</p>
+                                                  <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; • <a href="https://www.thuisarts.nl/stoppen-met-roken">Info stoppen met roken</a></p>
+                                                  <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  • <a href="https://www.rokeninfo.nl/publiek/info-over-stoppen"> More Info</a></p>
+
+
+
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Confirm</button>
+                                        <button type="button" class="btn btn-danger waves-effect waves-light save-category" data-dismiss="modal">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
 
