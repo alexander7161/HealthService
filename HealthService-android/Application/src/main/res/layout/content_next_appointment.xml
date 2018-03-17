@@ -99,7 +99,8 @@
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="#F100"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                app:srcCompat="@drawable/ic_qr_code" />
 
         </android.support.v7.widget.CardView>
 
