@@ -30,4 +30,10 @@ public class DashboardActivity extends AppCompatActivity {
             }
       });
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finish();
+    }
 }
