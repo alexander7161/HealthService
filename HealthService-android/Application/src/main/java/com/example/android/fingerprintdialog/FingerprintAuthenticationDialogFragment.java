@@ -260,4 +260,8 @@ public class FingerprintAuthenticationDialogFragment extends DialogFragment
         NEW_FINGERPRINT_ENROLLED,
         PASSWORD
     }
+
+    public void onBackPressed(){
+        getActivity().onBackPressed();
+    }
 }
