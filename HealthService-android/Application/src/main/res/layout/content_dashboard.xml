@@ -124,23 +124,3 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
 </android.support.constraint.ConstraintLayout>
-
-
-<TextView
-android:id="@+id/TextView7"
-android:layout_width="180dp"
-android:layout_height="122dp"
-android:ems="10"
-android:inputType="textPersonName"
-android:text="Future appointments"
-tools:layout_editor_absoluteX="8dp"
-tools:layout_editor_absoluteY="381dp" />
-
-<TextView
-android:id="@+id/TextView4"
-android:layout_width="180dp"
-android:layout_height="122dp"
-android:ems="10"
-android:inputType="textPersonName"
-android:text="Notes"
-android:textAlignment="center" />
