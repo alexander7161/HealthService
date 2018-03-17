@@ -22,7 +22,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/nextAppointment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/card_large"
             android:layout_marginBottom="8dp">
 
             <TextView
@@ -30,8 +30,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:text="Next appointment"
+                android:text="Next appointment:       30th of March 2018"
                 android:textAlignment="center"
+                android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textSize="30sp" />
         </android.support.v7.widget.CardView>
@@ -40,7 +41,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/Profile"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/card_large"
             android:layout_marginBottom="8dp">
 
             <TextView
@@ -59,7 +60,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/Prescriptions"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/card_large"
             android:layout_marginBottom="8dp">
 
             <TextView
@@ -72,6 +73,7 @@
                 android:selectAllOnFocus="true"
                 android:text="Prescriptions"
                 android:textAlignment="center"
+                android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display2"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="9dp"
@@ -83,9 +85,9 @@
             android:layout_height="match_parent">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/Future appointments"
+                android:id="@+id/futureAppointments"
                 android:layout_width="0sp"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/card_large"
                 android:layout_marginBottom="8dp"
                 android:layout_weight="1">
 
@@ -107,7 +109,7 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/Notes"
                 android:layout_width="0sp"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/card_large"
                 android:layout_marginBottom="8dp"
                 android:layout_weight="1">
 
