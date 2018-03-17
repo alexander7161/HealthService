@@ -23,21 +23,20 @@
             android:id="@+id/nextAppointment"
             android:layout_width="match_parent"
             android:layout_height="@dimen/card_large"
-            android:layout_marginBottom="8dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            >
+            android:layout_marginBottom="8dp">
 
             <TextView
                 android:id="@+id/TextView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:ems="10"
                 android:text="Next appointment:       30th of March 2018"
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:textColor="#F100"
+                />
         </android.support.v7.widget.CardView>
 
 
@@ -45,46 +44,45 @@
             android:id="@+id/Profile"
             android:layout_width="match_parent"
             android:layout_height="@dimen/card_large"
-            android:layout_marginBottom="8dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            >
+            android:layout_marginBottom="8dp">
 
             <TextView
                 android:id="@+id/TextView5"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:backgroundTint="@color/cardview_dark_background"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="Profile"
+                android:gravity="center"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:textColor="#F100"
+                />
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:id="@+id/Prescriptions"
             android:layout_width="match_parent"
             android:layout_height="@dimen/card_large"
-            android:layout_marginBottom="8dp"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            >
+            android:layout_marginBottom="8dp">
+
 
             <TextView
                 android:id="@+id/TextView6"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:autoSizeMaxTextSize="30sp"
                 android:ems="10"
+                android:gravity="center"
                 android:inputType="textPersonName"
                 android:selectAllOnFocus="true"
                 android:text="Prescriptions"
                 android:textAlignment="center"
-                android:gravity="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display2"
                 android:textSize="30sp"
+                android:textColor="#F100"
                 tools:layout_editor_absoluteX="9dp"
                 tools:layout_editor_absoluteY="280dp" />
         </android.support.v7.widget.CardView>
@@ -98,24 +96,24 @@
                 android:layout_width="0sp"
                 android:layout_height="@dimen/card_large"
                 android:layout_marginBottom="8dp"
-                android:layout_weight="1"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                >
+                android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
                     android:layout_weight="1"
                     android:ellipsize="none"
                     android:maxLines="100"
+                    android:textColor="#F100"
                     android:scrollHorizontally="false"
+                    android:gravity="center"
                     android:text="Future appointments"
                     android:textAlignment="center"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -123,23 +121,57 @@
                 android:layout_width="0sp"
                 android:layout_height="@dimen/card_large"
                 android:layout_marginBottom="8dp"
-                android:layout_weight="1"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:clickable="true"
-                >
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@id/textView2"
+                    android:textColor="#F100"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:text="Notes"
                     android:textAlignment="center"
                     android:textSize="28sp" />
             </android.support.v7.widget.CardView>
 
         </LinearLayout>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
     </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 </android.support.constraint.ConstraintLayout>
