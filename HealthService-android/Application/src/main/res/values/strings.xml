@@ -47,4 +47,5 @@
     <string name="description_bugdroid_icon">Android bugdroid image</string>
     <string name="description_fingerprint_icon">Fingerprint icon</string>
     <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_activity_next_appointment">NextAppointmentActivity</string>
 </resources>
