@@ -29,11 +29,13 @@ public class DashboardActivity extends AppCompatActivity {
                 startActivity(intent);
             }
       });
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        finish();
+        CardView profile = (CardView) findViewById(R.id.Profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashboardActivity.this, ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
