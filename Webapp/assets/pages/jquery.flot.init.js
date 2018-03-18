@@ -345,16 +345,16 @@
 	//initializing various charts and components
 	FlotChart.prototype.init = function() {
 		//plot graph data
-		var uploads = [[0, 9], [1, 8], [2, 5], [3, 8], [4, 5], [5, 14], [6, 10],[7, 8], [8, 5], [9, 14], [10, 10]];
-		var downloads = [[0, 5], [1, 12], [2, 4], [3, 3], [4, 12], [5, 11], [6, 14],[7, 12], [8, 8], [9, 4], [10, 8]];
-		var plabels = ["Visits", "Page views"];
-		var pcolors = ['#188ae2', '#10c469'];
+		var uploads = [[0, 140], [20, 146], [40, 160], [60,170 ], [80, 150], [100, 134 ], [120, 120],[140, 150], [160, 180], [180, 148], [200, 118]];
+		var downloads = [[0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0],[0, 0], [0, 0], [0, 0], [0, 0]];
+		var plabels = ["Bpm"];
+		var pcolors = ['#188ae2'];
 		var borderColor = 'transparent';
 		var bgColor = 'transparent';
 		this.createPlotGraph("#website-stats", uploads, downloads, plabels, pcolors, borderColor, bgColor);
 
 		//Pie graph data
-		var pielabels = ["Series 1", "Series 2", "Series 3"];
+		var pielabels = ["Series 1"];
 		var datas = [20, 30, 15];
 		var colors = ['#ff8acc', '#5b69bc', "#f9c851"];
 		this.createPieGraph("#pie-chart #pie-chart-container", pielabels, datas, colors);
@@ -373,7 +373,7 @@
 		updatePlot();
 
 		//Donut pie graph data
-		var donutlabels = ["Series 1", "Series 2", "Series 3", "Series 4"];
+		var donutlabels = ["Insulin 10 IE", "Podotherapy", "ACE - inhibitor", "Sport"];
 		var donutdatas = [35, 20, 10, 20];
 		var donutcolors = ['#188ae2', '#10c469', "#f9c851", "#ff8acc"];
 		this.createDonutGraph("#donut-chart #donut-chart-container", donutlabels, donutdatas, donutcolors);
@@ -423,21 +423,21 @@ $(document).ready(function() {
 		var ds = new Array();
 
 		ds.push({
-			label: "Series One",
+			label: "ACE - Inhibitor",
 			data: d1,
 			bars: {
 				order: 3
 			}
 		});
 		ds.push({
-			label: "Series Two",
+			label: "Insulin",
 			data: d2,
 			bars: {
 				order: 2
 			}
 		});
 		ds.push({
-			label: "Series Three",
+			label: "Acetosal",
 			data: d3,
 			bars: {
 				order: 1
@@ -511,4 +511,3 @@ $(document).ready(function() {
 		$.plot($("#ordered-bars-chart"), ds, options);
 	});
 });
-
