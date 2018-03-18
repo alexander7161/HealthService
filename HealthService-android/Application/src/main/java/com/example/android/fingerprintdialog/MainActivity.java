@@ -262,16 +262,8 @@ public class MainActivity extends AppCompatActivity {
                     = new FingerprintAuthenticationDialogFragment();
             fragment.setCancelable(false);
             fragment.setCryptoObject(new FingerprintManager.CryptoObject(cipher));
-            boolean useFingerprintPreference = mSharedPreferences
-                    .getBoolean(getString(R.string.use_fingerprint_to_authenticate_key),
-                            true);
-            if (useFingerprintPreference) {
                 fragment.setStage(
                         FingerprintAuthenticationDialogFragment.Stage.FINGERPRINT);
-            } else {
-                fragment.setStage(
-                        FingerprintAuthenticationDialogFragment.Stage.PASSWORD);
-            }
             fragment.show(getFragmentManager(), DIALOG_FRAGMENT_TAG);
         } else {
             // This happens if the lock screen has been disabled or or a fingerprint got
@@ -286,5 +278,11 @@ public class MainActivity extends AppCompatActivity {
                     FingerprintAuthenticationDialogFragment.Stage.NEW_FINGERPRINT_ENROLLED);
             fragment.show(getFragmentManager(), DIALOG_FRAGMENT_TAG);
         }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
     }
 }
