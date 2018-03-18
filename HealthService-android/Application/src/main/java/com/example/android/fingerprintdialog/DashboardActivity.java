@@ -37,6 +37,14 @@ public class DashboardActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        CardView prescriptions = (CardView) findViewById(R.id.Prescriptions);
+        prescriptions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashboardActivity.this, PrescriptionsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
