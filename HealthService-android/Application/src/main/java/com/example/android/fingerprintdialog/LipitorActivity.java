@@ -3,11 +3,11 @@ package com.example.android.fingerprintdialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Prescriptions extends AppCompatActivity {
+public class LipitorActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_prescriptions);
+        setContentView(R.layout.activity_lipitor);
     }
 }
