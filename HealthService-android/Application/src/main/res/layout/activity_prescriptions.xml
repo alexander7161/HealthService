@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.fingerprintdialog.PrescriptionsActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/nextAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_large"
+            android:layout_marginBottom="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardCornerRadius="2dp"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:text="Penicillin"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="30sp"
+                android:textColor="#F00"
+                />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/Profile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_large"
+            android:layout_marginBottom="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardCornerRadius="2dp"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/TextView5e"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:ems="10"
+                android:text="Lipitor"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="30sp"
+                android:textColor="#173"
+                />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/Profilee"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_large"
+            android:layout_marginBottom="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardCornerRadius="2dp"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/TextView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:ems="10"
+                android:text="Plavixe"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="30sp"
+                android:textColor="#F173"
+                />
+
+</android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
