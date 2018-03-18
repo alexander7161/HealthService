@@ -1,4 +1,4 @@
-package com.example.android.fingerprintdialog;
+package com.example.android.MIHC;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +10,6 @@ import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.LinearLayout;
 
 public class PrescriptionsActivity extends AppCompatActivity {
 

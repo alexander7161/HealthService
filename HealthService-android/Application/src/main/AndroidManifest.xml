@@ -15,7 +15,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.android.fingerprintdialog"
+    package="com.example.android.MIHC"
     android:versionCode="1"
     android:versionName="1.0">
 
@@ -29,7 +29,7 @@
         android:theme="@style/Theme.AppCompat.DayNight"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.android.MIHC.MainActivity"
             android:label="@string/application_name"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -40,58 +40,58 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DashboardActivity"
+            android:name="com.example.android.MIHC.DashboardActivity"
             android:label="@string/title_activity_dashboard"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".NextAppointmentActivity"
+            android:name="com.example.android.MIHC.NextAppointmentActivity"
             android:label="@string/title_activity_next_appointment"
-            android:parentActivityName=".DashboardActivity"
+            android:parentActivityName="com.example.android.MIHC.DashboardActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".DashboardActivity" />
+                android:value="com.example.android.MIHC.DashboardActivity" />
         </activity>
         <activity
-            android:name=".ProfileActivity"
-            android:parentActivityName=".DashboardActivity"
+            android:name="com.example.android.MIHC.ProfileActivity"
+            android:parentActivityName="com.example.android.MIHC.DashboardActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".DashboardActivity" />
+                android:value="com.example.android.MIHC.DashboardActivity" />
         </activity>
-        <activity android:name=".PrescriptionsActivity"
-            android:parentActivityName=".DashboardActivity"
+        <activity android:name="com.example.android.MIHC.PrescriptionsActivity"
+            android:parentActivityName="com.example.android.MIHC.DashboardActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         >
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".DashboardActivity" />
+            android:value="com.example.android.MIHC.DashboardActivity" />
         </activity>
-        <activity android:name=".PenicillinActivity"
+        <activity android:name="com.example.android.MIHC.PenicillinActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:parentActivityName=".PrescriptionsActivity"
+            android:parentActivityName="com.example.android.MIHC.PrescriptionsActivity"
             >
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".PrescriptionsActivity" /></activity>
-        <activity android:name=".LipitorActivity"
+            android:value="com.example.android.MIHC.PrescriptionsActivity" /></activity>
+        <activity android:name="com.example.android.MIHC.LipitorActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:parentActivityName=".PrescriptionsActivity"
+            android:parentActivityName="com.example.android.MIHC.PrescriptionsActivity"
 
             >
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".PrescriptionsActivity" /></activity>
-        <activity android:name=".PlavixActivity"
+            android:value="com.example.android.MIHC.PrescriptionsActivity" /></activity>
+        <activity android:name="com.example.android.MIHC.PlavixActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:parentActivityName=".PrescriptionsActivity"
+            android:parentActivityName="com.example.android.MIHC.PrescriptionsActivity"
 
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PrescriptionsActivity" />
+                android:value="com.example.android.MIHC.PrescriptionsActivity" />
         </activity>
     </application>
 

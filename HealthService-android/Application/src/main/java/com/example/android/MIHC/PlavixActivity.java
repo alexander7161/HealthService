@@ -1,4 +1,4 @@
-package com.example.android.fingerprintdialog;
+package com.example.android.MIHC;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,13 +9,13 @@ import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.WindowManager;
 
-public class PenicillinActivity extends AppCompatActivity {
+public class PlavixActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_penicillin);
+        setContentView(R.layout.activity_plavix);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

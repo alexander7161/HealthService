@@ -1,36 +1,28 @@
-package com.example.android.fingerprintdialog;
+package com.example.android.MIHC;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
+import android.view.WindowManager;
 
-import org.w3c.dom.Text;
-
-public class NextAppointmentActivity extends AppCompatActivity {
+public class LipitorActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_next_appointment);
+        setContentView(R.layout.activity_lipitor);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 
     public boolean onOptionsItemSelected(MenuItem item){
-        Intent myIntent = new Intent(getApplicationContext(), DashboardActivity .class);
+        Intent myIntent = new Intent(getApplicationContext(), PrescriptionsActivity .class);
         startActivityForResult(myIntent, 0);
         return true;
 
@@ -50,7 +42,13 @@ public class NextAppointmentActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent setIntent = new Intent(getApplicationContext(), DashboardActivity .class);
+        Intent setIntent = new Intent(getApplicationContext(), PrescriptionsActivity .class);
         startActivity(setIntent);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
     }
 }

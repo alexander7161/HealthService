@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package com.example.android.fingerprintdialog;
+package com.example.android.MIHC;
 
 import android.app.KeyguardManager;
 import android.content.Intent;
@@ -29,14 +29,9 @@ import android.security.keystore.KeyProperties;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Base64;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;

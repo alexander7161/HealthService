@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package com.example.android.fingerprintdialog;
+package com.example.android.MIHC;
 
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.CancellationSignal;
