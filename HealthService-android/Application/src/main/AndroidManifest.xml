@@ -63,18 +63,36 @@
         </activity>
         <activity android:name=".PrescriptionsActivity"
             android:parentActivityName=".DashboardActivity"
-            >
-
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        >
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".DashboardActivity" />
         </activity>
-        <activity android:name=".PenicillinActivity" >
+        <activity android:name=".PenicillinActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:parentActivityName=".PrescriptionsActivity"
+            >
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".PrescriptionsActivity" /></activity>
-        <activity android:name=".LipitorActivity" />
-        <activity android:name=".PlavixActivity"></activity>
+        <activity android:name=".LipitorActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:parentActivityName=".PrescriptionsActivity"
+
+            >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".PrescriptionsActivity" /></activity>
+        <activity android:name=".PlavixActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:parentActivityName=".PrescriptionsActivity"
+
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PrescriptionsActivity" />
+        </activity>
     </application>
 
 </manifest>

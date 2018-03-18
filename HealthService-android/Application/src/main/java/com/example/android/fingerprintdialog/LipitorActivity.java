@@ -22,7 +22,7 @@ public class LipitorActivity extends AppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem item){
-        Intent myIntent = new Intent(getApplicationContext(), DashboardActivity .class);
+        Intent myIntent = new Intent(getApplicationContext(), PrescriptionsActivity .class);
         startActivityForResult(myIntent, 0);
         return true;
 
@@ -42,7 +42,13 @@ public class LipitorActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent setIntent = new Intent(getApplicationContext(), DashboardActivity .class);
+        Intent setIntent = new Intent(getApplicationContext(), PrescriptionsActivity .class);
         startActivity(setIntent);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
     }
 }
