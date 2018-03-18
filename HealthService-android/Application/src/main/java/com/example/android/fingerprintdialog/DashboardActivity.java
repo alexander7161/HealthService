@@ -29,6 +29,14 @@ public class DashboardActivity extends AppCompatActivity {
                 startActivity(intent);
             }
       });
+        CardView profile = (CardView) findViewById(R.id.Profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DashboardActivity.this, ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
