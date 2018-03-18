@@ -2,7 +2,7 @@
 * Theme: Adminto Admin Template
 * Author: Coderthemes
 * Component: Full-Calendar
-* 
+*
 */
 
 
@@ -24,7 +24,7 @@
 
 
     /* on drop */
-    CalendarApp.prototype.onDrop = function (eventObj, date) { 
+    CalendarApp.prototype.onDrop = function (eventObj, date) {
         var $this = this;
             // retrieve the dropped element's stored Event Object
             var originalEventObject = eventObj.data('eventObject');
@@ -99,14 +99,14 @@
                         end: end,
                         allDay: false,
                         className: categoryClass
-                    }, true);  
+                    }, true);
                     $this.$modal.modal('hide');
                 }
                 else{
                     alert('You have to give a title to your event');
                 }
                 return false;
-                
+
             });
             $this.$calendarObj.fullCalendar('unselect');
     },
@@ -140,28 +140,28 @@
         var today = new Date($.now());
 
         var defaultEvents =  [{
-                title: 'Hey!',
-                start: new Date($.now() + 158000000),
+                title: 'Breast Reduction',
+                start: new Date($.now() + 98000000),
                 className: 'bg-purple'
             }, {
-                title: 'See John Deo',
+                title: 'General practicer',
                 start: today,
                 end: today,
-                className: 'bg-danger'
-            }, {
-                title: 'Buy a Theme',
-                start: new Date($.now() + 338000000),
                 className: 'bg-primary'
+            }, {
+                title: 'Dentist',
+                start: new Date($.now() + 338000000),
+                className: 'bg-warning'
             }];
 
         var $this = this;
         $this.$calendarObj = $this.$calendar.fullCalendar({
             slotDuration: '00:15:00', /* If we want to split day time each 15minutes */
             minTime: '08:00:00',
-            maxTime: '19:00:00',  
-            defaultView: 'month',  
-            handleWindowResize: true,   
-            height: $(window).height() - 200,   
+            maxTime: '19:00:00',
+            defaultView: 'month',
+            handleWindowResize: true,
+            height: $(window).height() - 200,
             header: {
                 left: 'prev,next today',
                 center: 'title',
@@ -192,7 +192,7 @@
 
    //init CalendarApp
     $.CalendarApp = new CalendarApp, $.CalendarApp.Constructor = CalendarApp
-    
+
 }(window.jQuery),
 
 //initializing CalendarApp
