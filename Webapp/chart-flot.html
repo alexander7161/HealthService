@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
         <!-- App title -->
-        <title>Healthtech HEX</title>
+        <title>HealthTech HEX</title>
 
         <!-- App CSS -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -43,7 +43,7 @@
 
                 <!-- LOGO -->
                 <div class="topbar-left">
-                    <a href="index.html" class="logo"><span>Healthtech<span>HEX</span></span><i class="zmdi zmdi-layers"></i></a>
+                    <a href="index.html" class="logo"><span>HealthTech<span>HEX</span></span><i class="zmdi zmdi-layers"></i></a>
                 </div>
 
                 <!-- Button mobile view to collapse sidebar menu -->
@@ -58,7 +58,7 @@
                                 </button>
                             </li>
                             <li>
-                                <h4 class="page-title">Flot Charts</h4>
+                                <h4 class="page-title">Statistics</h4>
                             </li>
                         </ul>
 
@@ -103,10 +103,10 @@
                     <!-- User -->
                     <div class="user-box">
                         <div class="user-img">
-                            <img src="assets/images/users/isaac.png" alt="user-img" title="Isaac Illiano" class="img-circle img-thumbnail img-responsive">
+                            <img src="assets/images/users/isaac.png" alt="user-img" title="Isabel Illiano" class="img-circle img-thumbnail img-responsive">
                             <div class="user-status online"><i class="zmdi zmdi-dot-circle"></i></div>
                         </div>
-                        <h5><a href="#">Isaac Illiano</a> </h5>
+                        <h5><a href="#">Isabel Illiano</a> </h5>
                         <ul class="list-inline">
                             <li>
                                 <a href="#" >
@@ -135,7 +135,7 @@
                                       <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-view-list"></i> <span> Medical Report </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                  <li><a href="tables-basic.html">Informations</a></li>
+                                  <li><a href="tables-basic.html">Information</a></li>
                                     <li><a href="tables-datatable.html">Medical Report</a></li>
                                 </ul>
                             </li>
@@ -158,7 +158,7 @@
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-layers"></i><span> Utility </span> <span class="menu-arrow"></span></a>
                                 <ul class="list-unstyled">
-                                    
+
                                     <li><a href="extras-contact.html">Contact list</a></li>
                                     <li><a href="extras-invoice.html">Payment</a></li>
                                     <li><a href="extras-faq.html">FAQ</a></li>
@@ -189,122 +189,40 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="card-box">
-                                    <div class="dropdown pull-right">
-                                        <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
-                                            <i class="zmdi zmdi-more-vert"></i>
-                                        </a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
 
-                        			<h4 class="header-title m-t-0 m-b-30">Multiple Statistics</h4>
 
-                                    <div id="website-stats" style="height: 320px;" class="flot-chart"></div>
+                        			<h4 class="header-title m-t-0 m-b-30">Blood Pressure</h4>
+
+                                    <div id="website-stats" style="height: 380px;" class="flot-chart"></div>
 
                         		</div>
                             </div><!-- end col-->
-
                             <div class="col-lg-6">
                                 <div class="card-box">
-                                    <div class="dropdown pull-right">
-                                        <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
-                                            <i class="zmdi zmdi-more-vert"></i>
-                                        </a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
+
+
+                                    <h4 class="header-title m-t-0 m-b-30">Policy Diabetes</h4>
+                                    <p> Type 2 with high blood pressure</p>
+
+                                    <div id="donut-chart">
+                                        <div id="donut-chart-container" class="flot-chart" style="height: 340px;">
+                                        </div>
                                     </div>
-
-                        			<h4 class="header-title m-t-0 m-b-30">Realtime Statistics</h4>
-
-                                    <div id="flotRealTime" style="height: 320px;" class="flot-chart"></div>
-
-                        		</div>
+                                </div>
                             </div><!-- end col-->
+
                         </div>
                         <!-- end row -->
 
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="card-box">
-                                    <div class="dropdown pull-right">
-                                        <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown"
-                                           aria-expanded="false">
-                                            <i class="zmdi zmdi-more-vert"></i>
-                                        </a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
 
-                                    <h4 class="header-title m-t-0 m-b-30">Donut Pie</h4>
-
-                                    <div id="donut-chart">
-                                        <div id="donut-chart-container" class="flot-chart" style="height: 260px;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- end col-->
-
-                            <div class="col-lg-6">
-                                <div class="card-box">
-                                    <div class="dropdown pull-right">
-                                        <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown"
-                                           aria-expanded="false">
-                                            <i class="zmdi zmdi-more-vert"></i>
-                                        </a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <h4 class="header-title m-t-0 m-b-30">Pie Chart</h4>
-
-                                    <div id="pie-chart">
-                                        <div id="pie-chart-container" class="flot-chart" style="height: 260px;">
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div><!-- end col-->
-                        </div>
                         <!-- end row -->
 
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="card-box">
-                                    <div class="dropdown pull-right">
-                                        <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown"
-                                           aria-expanded="false">
-                                            <i class="zmdi zmdi-more-vert"></i>
-                                        </a>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                        </ul>
-                                    </div>
 
-                                    <h4 class="header-title m-t-0 m-b-30">Bar chart</h4>
+
+                                    <h4 class="header-title m-t-0 m-b-30">Medicine</h4>
 
                                     <div id="ordered-bars-chart" style="height: 320px;"></div>
                                 </div>
@@ -339,11 +257,47 @@
 
                                 </div>
                             </div><!-- end col-->
+                            <div class="row">
 
+
+                                <div class="col-lg-6">
+                                    <div class="card-box">
+                                        <div class="dropdown pull-right">
+                                            <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown"
+                                               aria-expanded="false">
+                                                <i class="zmdi zmdi-more-vert"></i>
+                                            </a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <h4 class="header-title m-t-0 m-b-30">Pie Chart</h4>
+
+                                        <div id="pie-chart">
+                                            <div id="pie-chart-container" class="flot-chart" style="height: 260px;">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div><!-- end col-->
+                            </div>
                         </div>
                         <!-- end row -->
 
+                        <div class="col-lg-6">
+                            <div class="card-box">
 
+                          <h4 class="header-title m-t-0 m-b-30">Realtime Statistics</h4>
+
+                                <div id="flotRealTime" style="height: 320px;" class="flot-chart"></div>
+
+                        </div>
+                        </div><!-- end col-->
                     </div> <!-- container -->
 
                 </div> <!-- content -->
