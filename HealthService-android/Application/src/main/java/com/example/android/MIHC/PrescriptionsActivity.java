@@ -72,4 +72,10 @@ public class PrescriptionsActivity extends AppCompatActivity {
         Intent setIntent = new Intent(getApplicationContext(), DashboardActivity .class);
         startActivity(setIntent);
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
+    }
 }
