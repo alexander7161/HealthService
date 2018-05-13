@@ -1,5 +1,5 @@
 # MyIndividualHealthCare
 
-Health app.
+Health service.
 
 Created at HEX in Eindhoven, The Netherlands.
